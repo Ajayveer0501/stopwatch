@@ -22,7 +22,8 @@ const formatTime=(time)=>{
   const minutes =Math.floor(time/60)
   const remainingSeonds =time%60
   //return `${days<10?"0":""}${days}:${minutes<10?"0":""}${minutes}:${remainingSeonds<10?"0":""}${remainingSeonds}`;
-  return `${minutes<10?"0":""}${minutes}:${remainingSeonds<10?"0":""}${remainingSeonds}`;
+  //return `${minutes<10?"0":""}${minutes}:${remainingSeonds<10?"0":""}${remainingSeonds}`;
+  return `${minutes}:${remainingSeonds<10?"0":""}${remainingSeonds}`;
 };
 const startStop=()=>{
   setIsRunning(!isRunning)
